@@ -205,3 +205,9 @@ git diff --staged # 比较暂存区和版本库差异
 ## 新Repository的README.md
 Github、Gitee这些仓库在New一个Repository时都会有新建README.md的选项，而README.md一般是不能缺的，所以开始的时候我都会直接顺手创建。<br/>
 但是后来就出现了很多很多的麻烦，所以现在个人不建议直接创建README.md这东西，本地自己创一个文件写好内容直接push就行。
+
+## 从Github撤销一次提交
+```text
+git reset --hard HEAD~
+git push -f
+```
